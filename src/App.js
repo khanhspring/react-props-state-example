@@ -5,8 +5,11 @@ class App extends Component {
     render() {
         return (
             <div className="app">
-                <Button type="primary" label="Create" />
-                <Button type="secondary" label="Update" />
+                <Button type="primary" label="Primary" />
+                <Button type="secondary" label="Secondary" />
+                <Button type="danger" label="Danger" />
+                <Button type="warning" label="Warning" />
+                <Button type="colorful" label="Colorful" />
             </div>
         );
     }

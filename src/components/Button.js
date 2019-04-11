@@ -9,8 +9,8 @@ class Button extends Component {
     }
 
     handleOnClick = () => {
-        this.setState({isLoading: true});
-        setTimeout(() => this.setState({isLoading: false}), 2000);
+        const currentLoadingState = this.state.isLoading;
+        this.setState({isLoading: !currentLoadingState});
     };
 
     render() {
